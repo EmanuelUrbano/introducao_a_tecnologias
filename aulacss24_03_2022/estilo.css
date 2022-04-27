@@ -1,0 +1,30 @@
+h2{
+    border-style:dotted;
+}
+h3{
+    border-style:solid;
+}
+
+h4{
+    border-style: dashed solid dotted double;
+}
+
+#p1{
+    border-style:solid;
+}
+
+#p2{
+    border-style: solid;
+    border-width: thin;
+}
+
+#p3{
+    border-style:solid;
+    border-width: 2px 10px;
+    border-color: red rgb(194, 3, 67) rgb(161, 0, 113) rgb(101, 4, 110);
+}
+
+#p4{
+    border: 2px solid red;
+    border-radius:10px;
+}

@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+</head>
+<body>
+    <form>
+
+        <label for="lbl_nome">Nome Completo</label><br>
+        <input type="text" id="input_nome" name="input_nome" required><br><br>
+        <label for="lbl_endereco">Endereço</label><br>
+        <input type="text" id="input_endereco" name="input_endereco" required><br><br>
+        <label for="estado">Estado</label><br>
+        <select id="slct_estado">
+            <option value="AC">Acre</option>
+            <option value="AL">Alagoas</option>
+            <option value="AP">Amapá</option>
+            <option value="AM">Amazonas</option>
+            <option value="BA">Bahia</option>
+            <option value="CE">Ceará</option>
+            <option value="DF">Distrito Federal</option>
+            <option value="ES">Espírito Santo</option>
+            <option value="GO">Goiás</option>
+            <option value="MA">Maranhão</option>
+            <option value="MT">Mato Grosso</option>
+            <option value="MS">Mato Grosso do Sul</option>
+            <option value="MG">Minas Gerais</option>
+            <option value="PA">Pará</option>
+            <option value="PB">Paraíba</option>
+            <option value="PR">Paraná</option>
+            <option value="PE">Pernambuco</option>
+            <option value="PI">Piauí</option>
+            <option value="RJ">Rio de Janeiro</option>
+            <option value="RN">Rio Grande do Norte</option>
+            <option value="RS">Rio Grande do Sul</option>
+            <option value="RO">Rondônia</option>
+            <option value="RR">Roraima</option>
+            <option value="SC">Santa Catarina</option>
+            <option value="SP">São Paulo</option>
+            <option value="SE">Sergipe</option>
+            <option value="TO">Tocantins</option>
+        </select><br><br>
+        <label for="lbl_email">E-mail</label><br>
+        <input type="email" id="input_email" name="input_email" required><br><br>
+        <label for="lbl_Celular (DDD)">Celular</label><br>
+        <input type="tel" id="input_tel" name="input_tel" required pattern="[0-9]{2} [0-9]{5}-[0-9]{4}" placeholder="11 11111-1111"><br><br>
+        <input type="url" id="input_url" name="input_url"><br><br>
+        <label for="lbl_data_nasc">Data de nascimento</label><br>
+        <input type="date" id="input_date" name="input_date"><br>
+        <label for="lbl_estado_civil">Estado civil</label><br>
+        <select name="slct_estado_civil" id="slct_estado_civil">
+            <option value="solteiro">Solterio</option>
+            <option value="casado">Casado</option>
+            <option value="divorciado">Divorciado</option>
+            <option value="viuvo">viuvo</option>
+        </select>
+        <fieldset>
+            <legend>Sexo</legend><br>
+            <input type="radio" id="sexo_masc" name="sexo" value="masculino">
+            <label for="sexo_masc">Masculino</label>
+            <input type="radio" id="sexo_fem" name="sexo" value="feminino">
+            <label for="sexo_fem">Feminino</label>
+        </fieldset>
+        <label for="lbl_usuario">Usúario</label><br>
+        <input type="text" id="input_text" name="input_text" required><br><br>
+        <label for="lbl_senha">Senha</label><br>
+        <input type="password" id="input_password" name="input_password" required><br><br>
+        <label for="lbl_upload">Anexar Currículo</label><br>
+        <input type="file" id="input_file" name="input_file" >
+        <label for="lbl_mensagem">Outras informações</label><br>
+        <textarea name="mensagem" id="" cols="30" rows="10"></textarea>
+    </form>
+</body>
+</html>

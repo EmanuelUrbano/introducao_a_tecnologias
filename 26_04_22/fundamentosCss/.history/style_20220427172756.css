@@ -1,0 +1,101 @@
+
+/*estados css do link*/
+a{
+    color:aqua;
+}
+
+a:hover{
+    color:black;
+}
+
+a:active{
+    color: blue;
+}
+
+/* notação ul.a: algum elemento ul que a classe é a */
+ul.a{
+    list-style-type: circle;
+}
+
+ul.b{
+    list-style-type: square;
+}
+
+/*
+    border-colapse: indica se dentro da tabela vai ter bordas compartilhadas;
+
+    ----------------------------
+    | |__pro_____| |______o_____|
+    ----------------------------
+    | |__pro_____| |______o_____|
+    ----------------------------
+
+    os estados do link tabem funciona para a tabela;
+
+*/
+
+table{
+    font-family: Arial, Helvetica, sans-serif;
+    border-collapse: collapse;
+    width: 70%;
+}
+
+table td, table th{
+    border: 1px solid white;
+    padding:8px;
+}
+
+table tr:hover{
+    background-color: #ddd;
+}
+
+table th{
+    padding: 12px 0px;
+    text-align: center;
+    background-color: lightgreen;
+    color: white;
+}
+
+
+/*
+    overflow: barra de rolagem;
+
+    max-width:
+
+    quando o diplay for block, e especifica a lagura ele fica com essa largura;
+    porem tem um problema porque o tamanho da largura ficará fixo, e aparece barra de rolagem 
+    horizontal;
+
+    para isso o max width serve, para especificar a largura maxima do objeto,
+    e então o conteudo vai se ajustando, com a largura da janela;
+
+*/
+
+/*exemplo max-width*/
+
+div.ex1{
+    width:500px;
+    margin: auto;
+    border: 3px solid greenyellow;
+}
+
+div.ex2{
+    max-width:500px;
+    margin:auto;
+    border: 3px solid greenyellow;
+}
+
+
+/*
+ list-style-position:
+ 
+ propriedade que indica a posição da lista horizontalmente
+*/
+
+ul.c{
+    list-style-position: outside;
+}
+
+ul.d{
+    list-style-position: inside;
+}
