@@ -1,0 +1,70 @@
+/*
+
+float:
+esta propriedade especifica como o elemento deverá flutuar, é usada para posicionar o conteudo
+(funciona para qualquer display)
+
+right,left,center
+*/
+
+img{
+    width: 170px;
+    height: auto;
+    float: right;/*flutuar imagem para a direita*/
+}
+
+/*
+clear:
+
+fala o que vai acontecer com os elementos que estão proximos do elemento flutuante,
+
+left;(vai empurrar para baixo se tiver um irmão float left)
+right;(vai empurrar para baixo se tiver um irmão float right)
+both;(vai empurrar para baixo se tiver um irmão para left ou right)
+*/
+
+
+/*sem clear*/
+
+.div1{
+    padding: 10px;
+    border: solid red 1px;
+    float: left;
+}
+
+.div2{
+    padding: 10px;
+    border: solid green 1px;
+}
+
+/*com clear*/
+
+.div3{
+    padding: 10px;
+    border: solid red 1px;
+    float: left;
+}
+
+.div4{
+    padding: 10px;
+    border: solid green 1px;
+    clear: left;
+}
+
+/*
+clearfix Hack
+
+pode ser usado para resolver problemas, como o de float
+
+*/
+
+.clearfix{
+    border: solid green 1px;
+}
+
+/*aqui está a magica para que a img flutuante fique dentro do card*/
+.clearfix::after{/*criar pseudoelemento antes do clearfix*/
+    content: "";/*conteudo vazio*/
+    clear: both;/*empurrar qualquer float para baixo*/
+    display: table;/*vai ser dos mesmo nivel de tabela*/
+}

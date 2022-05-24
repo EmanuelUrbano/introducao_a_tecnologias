@@ -1,0 +1,29 @@
+.topnav{
+    background-color: grey;
+}
+
+.topnav a{
+    box-sizing: border-box;/*a largura e altura conta do conteudo a borda*/
+    color: #f2f2f2;
+    text-align: center;
+    text-decoration: none;
+    padding: 14px 16px;
+    display: inline-block;/*ficar do lado e modificar altura e largura*/
+}
+
+.topnav a:hover{
+    background-color: #ddd;
+    color: black;
+}
+
+/*se for monitor e a tela for menor que 600px*/
+@media screen and (max-width: 600px) {
+    .topnav{
+        width: 70%;
+        margin: 0 auto;
+    }
+    .topnav a{
+        display: block;
+        width: 100%;
+    }
+}

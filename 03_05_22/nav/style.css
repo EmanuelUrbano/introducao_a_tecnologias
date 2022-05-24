@@ -1,0 +1,40 @@
+/*estilo da lista não ordenada*/
+ul{
+    list-style-type:none;/*tirar marcadores da lista*/
+    /*para a lista ficar rente a pagina tirar padding e margin*/
+    margin: 0;
+    padding: 0;
+
+    background-color: #ddd;
+    overflow: hidden;/*se por algum motivo transbordar não ter barra*/
+}
+
+/*estilo de ca da linha*/
+
+li{
+    float: left;/*ficará todos para esquerda um do outro*/
+}
+
+/*estilo para qualquer link que esteja dentro de uma linha*/
+li a{
+    display: block;/*poder manipular altura largura padding margin*/
+    text-decoration: none;/*tirar underline*/
+    padding: 8px 16px;
+}
+/*estilo para quando passar o mouse em qualquer link que esteja dentro de uma linha*/
+li a:hover{
+    background-color: #333;
+    color: #ddd;
+}
+.nav_vertical{
+    list-style-type:none;/*tirar marcadores da lista*/
+    /*para a lista ficar rente a pagina tirar padding e margin*/
+    margin: 0;
+    padding: 0;
+
+    background-color: #ddd;
+    overflow: hidden;/*se por algum motivo transbordar não ter barra*/
+}
+.nav_vertical>li{
+    float: none;
+}

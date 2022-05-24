@@ -1,3 +1,5 @@
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     width: 940px;
@@ -41,6 +43,6 @@ h2{
     line-height: 0;
 }
 
-em~dl{
+dl{
     margin-left: 5%;
 }

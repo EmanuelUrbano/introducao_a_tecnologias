@@ -1,0 +1,5 @@
+img.imagem_pequena{
+    display:inline-block;
+    height: auto;
+    max-width: 30px;
+}

@@ -1,0 +1,118 @@
+p{
+    color: white;
+    background-color: blue;
+    width: 30%;/* apesar de ter 30% ainda não fica um do lado do outro mesmo tendo espaço por ser em bloco*/
+    display: inline-block;
+}
+
+a{
+    color: white;
+    background-color: red;
+    width: 60%;/*apesar de ser 60% ainda não  vai ficar por se de linha largura e altura não funciona*/
+    display: inline-block;
+}
+
+/*
+    display:block;
+
+    ocupa toda a linha mesmo alterando a largura;
+
+*/
+
+/*
+    display:block;
+
+    não ocupa toda a linha mas não altera a largura;
+
+*/
+
+/*
+    para usar o melhor dos dois mundos tem que usar a propriedade inline-block;
+*/
+
+/*
+    inline-block:
+    
+    ele fica um do lado do outro e pode mudar altura e largura;
+*/
+
+/*
+    overflow:
+
+    usado para conteudos muitos grandes para caber em uma area
+*/
+
+/*
+    -visible;
+
+        o elemento aparece  por padrão com o tamnho original;
+    -hidden;
+
+        o excesso do elemento é escondido;
+    -scroll;
+        cria uma barra de rolagem pra poder ver todo conteudo;
+    -auto;
+        a barra de rolagem só aparece quando necessário;
+*/
+
+#id1{
+    background-color: coral;
+    width: 200px;
+    height: 65px;
+    border: 1px solid;
+    overflow: hidden;
+}
+
+#id2{
+    background-color: coral;
+    width: 200px;
+    height: 205px;
+    border: 1px solid;
+    overflow: scroll;
+}
+
+#id3{
+    background-color: coral;
+    width: 200px;
+    height: 205px;
+    border: 1px solid;
+    overflow: auto;
+}
+
+#id4{
+    background-color: coral;
+    width: 200px;
+    height: 205px;
+    border: 1px solid;
+    overflow: visible;
+}
+
+/*
+    position:
+
+    diz como o elemento vai se posicionar na pagina;
+*/
+
+
+/*
+    position:static;
+
+        propriedade padrão dos elementos, não é afetado por:
+            -top;
+            -right;
+            -left;
+            -bottom;
+*/
+
+/*
+    position:relative;
+
+        irá posicionar relativo a sua posição normal, a tela;
+
+*/
+
+/*
+    position:absolute;
+        irá posicionar relativo ao elemento pai;
+*/
+

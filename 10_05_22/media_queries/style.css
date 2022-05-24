@@ -1,0 +1,47 @@
+/*
+media querie é uma tecnica popular de de fornecer uma folha de estilo personalizada 
+para diferentes telas
+
+as paginas precisam ser adaptadas  para o usuario
+*/
+
+/*
+sintaxe
+
+tem o media type(tipo de midia) que pode conter um ou mais media features
+
+
+
+@media media_type (media_features){
+    codigo css
+}
+
+tipos de midia: definem o tipo de midia que o css é direcionado
+    all: todos os dispositivos
+    screen: monitores e dispositivos com telas coloridas
+    handheld: telas de mao
+
+media features: que condição está o dispositivo para aplicar certo media
+
+    widht:de view
+    height: de view
+
+*/
+
+body{
+    background-color: tan;
+}
+/*se for um monitor e a telafor menor que 992px fundo azul*/
+@media screen and (max-width:992px) {
+    body{
+        background-color: blue;
+    }
+}
+/*se for um monitor e a tela for menor que 600px fundo olive*/
+@media screen and (max-width:600px) {
+    body{
+        background-color: olive;
+    }
+}
+
+/*o media type é para coisas muito especificas então pode e é mais usado o media fetures que funcionará*/

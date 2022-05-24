@@ -1,0 +1,31 @@
+.cabecalho{
+    background-color: #2D5377;
+    color: #fff;
+
+    text-align: center;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    letter-spacing: 3px;
+}
+
+.cabecalho_logo{
+    padding: 24px 0;
+    width: 232px;
+}
+
+.cabecalho_menu{
+    background-color: #272C3A87;
+    /*flexbox(caixa flexivel), torna posicionamento mais simples*/
+    display: flex;/*exibição flexivel(cria uma caixa flexivel)*/
+    justify-content: space-evenly;/*alinha os filhos dentro do elemento flex, nesse caso o espaçamento será igual*/
+    flex-wrap: wrap;/*wrap é que ele cai para baixo*/
+}
+
+.cabecalho_item-menu{
+    display: inline-block;
+}
+.cabecalho_item-menu a{
+    display: inline-block;
+    padding: 30px 22px;
+}

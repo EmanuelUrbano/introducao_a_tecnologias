@@ -1,0 +1,33 @@
+body{
+    background-image: radial-gradient(rgb(226, 226, 226), whitesmoke);
+}
+
+/*estilo do dropdown*/
+.dropdown{
+    position: relative;/* a formatação do elemento vai ser em relação a tela */
+    display: inline-block;/*ficar um do lado do outro e manipular altura e largura*/
+}
+/*estilo do conteudo do dropdown*/
+/*
+min-width: largura minima do elemento;
+
+box-shadow:criará efeito de sombra para o texto;
+
+position:absolute - a formatação do elemento vai ser em relação ao pai
+
+display:none - ocultará o elemento
+*/
+
+.dropdown-content{
+    background-color: lightgray;/*cor do fundo do elemento lightgray*/
+    min-width: 160px;/* tera no minimo 160px*/
+    box-shadow: 0px 8px 16px 0 rgba(0,0,0,0.2);/*criará efeito de sombra para o texto*/
+    padding: 12px 16px;/*preenchimento de 12px em cima e em baixo 16 px*/
+    position: absolute;/*a formatação do elemento vai ser em relação ao pai*/
+    display: none;/*ocultará o elemento*/
+}
+
+/*se passar mouse no dropdown mostrar conteudo*/
+.dropdown:hover .dropdown-content{
+    display: block;
+}

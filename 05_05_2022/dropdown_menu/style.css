@@ -1,0 +1,39 @@
+/*estilo do botão*/
+.dropbtn{
+    background-color: darkgreen;/*cor do fundo do botao verde escuro*/
+    color: white;/*cor do texto branco*/
+    padding: 16px;/*preenchimento de 16px*/
+    border: none;/*sem borda*/
+    cursor: pointer;/*fazer maozinha quando passar*/
+}
+/*estilo do menu*/
+.dropdown{
+    display: inline-block;/*ficar em linha e poder mudar altura e largura*/
+    position: relative;/*ficará posicionado em relação a tela*/
+}
+/*estilo do conteudo menu*/
+.dropdown-content{
+    background-color: #f9f9f9;/*cor de fundo do conteudo do menu*/
+    box-shadow: 0px/*topo*/ 8px /*direita*/ 16px /*bottom*/ 0px/*esquerda*/ rgba(0,0,0,0.2)/*r->red; g->green; b->blue a->alfa; o alfa diz a opacidade  quanto maior mais transparente*/;/*criar sombra */
+    display:none;/*não mostrar*/
+    position: absolute;/*posição relativa ao pai*/
+}
+/*estilo de qualquer a no conteudo do menu*/
+
+.dropdown-content a {
+    color: black;/*cor do texto preto*/
+    padding: 12px 16px;/*preenchimento*/
+    text-decoration: none;/*tira o underline*/
+    display: block;/*poder alterar largura, altura, padding e etc*/
+}
+
+/*passar o mouse sobre o a qualquer a dentro do conteudo do menu*/
+
+.dropdown-content a:hover{
+    background-color: lightgray; /*cor do fundo do a será lightgray*/
+}
+
+/*passar mouse sobre menu mostrar conteudo*/
+.dropdown:hover .dropdown-content{
+    display: block;
+}

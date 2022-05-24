@@ -1,0 +1,16 @@
+img.imagem_pequena{
+    display:inline-block;
+    height: auto;
+    max-width: 30%;
+}
+
+figure.imagem_grande{
+    max-width: 80%0;
+    height: auto;
+}
+
+figure.imagem_grande img{
+    display:block;
+    height: auto;
+    max-width: 100%;
+}

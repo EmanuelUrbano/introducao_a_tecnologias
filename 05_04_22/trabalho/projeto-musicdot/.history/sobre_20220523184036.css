@@ -1,3 +1,5 @@
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     width: 940px;
@@ -39,8 +41,4 @@ img[alt="familia-tupfeln"]{
 
 h2{
     line-height: 0;
-}
-
-em~dl{
-    margin-left: 5%;
 }

@@ -1,0 +1,27 @@
+todo elemento html tem um sentido um significado
+
+o html semantico torna mais achavel para os robos
+
+p->define um paragrafo
+
+b->não é semantico só diz no visual
+
+#usuario
+
+só visualiza e identifica o que é cada coisa
+
+#navegadores
+
+enxerga codigo e só entende cada coisa por elemento
+
+
+<header> ->cabeçalho
+
+<nav>->menu de navegação
+
+landing page -> pagina simples
+
+<main> ->todo conteudo(articles)
+<articles> ->tem os sections
+
+<aside> ->barra lateral

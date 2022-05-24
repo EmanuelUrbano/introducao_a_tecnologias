@@ -1,0 +1,43 @@
+#col1{
+    background-color: aqua;
+}
+#col2{
+    background-color: rgb(26, 230, 230);
+}
+#col3{
+    background-color: rgb(29, 131, 131);
+}
+#col4{
+    background-color: rgb(10, 117, 117);
+}
+.coluna{
+    float: left;
+   
+    width: 25%;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.linha{
+    margin: 0;
+}
+/*pseudo elemento*/
+.linha::after{
+    content: '';
+    display: table;
+    clear: both;/*limpar float que vem depois da linha*/
+
+}
+
+/*responsividade*/
+@media screen and (max-width:992px){
+    .coluna{
+        width:50%;
+    }
+}
+
+@media screen and (max-width:600px){
+    .coluna{
+        width:100%;
+    }
+}

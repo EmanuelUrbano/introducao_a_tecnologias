@@ -1,22 +1,22 @@
+
+
 body{
     font-family: Arial, Helvetica, sans-serif;
     width: 940px;
     margin: 0 auto;
 }
 
-h1{
+main>h1{
     background-color: rgb(226,237,243);
     padding: 15px;
 }
-figure{
+main>figure{
+    width: 550px;
     border: solid limegreen 1px;
     background-color: rgb(245,245,245);
     padding: 12px;
-    text-align: center;
-}
-main>figure{
     margin: 0 auto;
-    width: 550px;
+    text-align: center;
 }
 
 main>figure>img{
@@ -24,23 +24,16 @@ main>figure>img{
    padding-bottom: 8px;
 }
 
-figure>figcaption{
+main>figure>figurecaption{
     text-align: center;
 }
 
-figure#familia_tupfeln{
-    float: right;
-    width: 275px;
+figure:has(>img[alt="familia-tupfeln"]){
+    float: left;
+    min-width: 275px;
+    box-sizing: border-box;
 }
 
 img[alt="familia-tupfeln"]{
     width: 100%;
-}
-
-h2{
-    line-height: 0;
-}
-
-em~dl{
-    margin-left: 5%;
 }

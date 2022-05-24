@@ -1,0 +1,24 @@
+img.imagem_pequena{
+    display:inline-block;
+    height: auto;
+    max-width: 30%;
+}
+
+figure{
+    display: none;
+    box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.5);
+    max-width: 600px;
+}
+
+figure>img{
+    width: 100%;
+    height:auto;
+}
+
+figure>figcaption{
+    padding: 2%;
+}
+
+img.imagem_pequena:hover figure{
+    display: block;
+}
